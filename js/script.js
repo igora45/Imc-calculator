@@ -9,6 +9,7 @@ const btnCalculateIMC = document.querySelector(`#btn-calculate-imc`);
 const imcResult = document.querySelector(`#imc-result`);
 const calculateAgain = document.querySelector(`#calculate-again`);
 const firstP = document.querySelector(`.first-p`);
+const mainBackground = document.querySelector(`.main`);
 //and of the elements for calculate imc
 firstP.classList.add(`hidden`);
 
@@ -47,6 +48,7 @@ const calculatecAgainButtonClick = function () {
   inputWeight.value = 0;
   inputHeight.value = 0;
   imcResult.textContent = `0`;
+  mainBackground.classList.toggle(`random-color`);
 };
 // click event in button for calculate again
 calculateAgain.addEventListener(`click`, calculatecAgainButtonClick);

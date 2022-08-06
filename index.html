@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <main>
+    <main class="main">
       <!-- IMC section -->
       <div class="main-imc-project">
         <section class="section">
-          <h1 class="title" title="Project test">Project base</h1>
+          <h1 class="title" title="Project test">I M C CALCULATOR</h1>
           <!-- Message for invalid value -->
           <p class="first-p hidden">Type a valid value</p>
           <!-- Input weight -->
@@ -20,20 +20,34 @@
             <label for="input-weight" class="label-phase"
               >Type your weight (kilograms):
             </label>
-            <input id="input-weight" value="0" type="number" />
+            <input
+              id="input-weight"
+              class="input-edit"
+              value="0"
+              type="number"
+            />
           </div>
           <!-- Input height -->
           <div class="div-height div">
             <label class="label-phase" for="input-height"
               >Type your height (meters):
             </label>
-            <input id="input-height" value="0" type="number" />
+            <input
+              id="input-height"
+              class="input-edit"
+              value="0"
+              type="number"
+            />
           </div>
           <!-- BUTTON FOR CALCULATE IMC -->
-          <button id="btn-calculate-imc" class="btn">Calculate IMC</button>
+          <button id="btn-calculate-imc" class="btn btn-style-word">
+            CALCULATE IMC
+          </button>
           <p class="p">Your imc value is: <strong id="imc-result">0</strong></p>
           <!-- BUTTON FOR CALCULATE AGAIN (RESTORE VALUES) -->
-          <button id="calculate-again">Calculate Again</button>
+          <button id="calculate-again" class="btn-style-word">
+            CALCULATE AGAIN
+          </button>
         </section>
       </div>
       <!-- END OF THE IMC SECTION  -->
