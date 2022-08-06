@@ -45,10 +45,10 @@ btnCalculateIMC.addEventListener(`click`, calculateButtonClick);
 
 //restore values to calculate again;
 const calculatecAgainButtonClick = function () {
+  mainBackground.classList.toggle(`random-color`);
   inputWeight.value = 0;
   inputHeight.value = 0;
   imcResult.textContent = `0`;
-  mainBackground.classList.toggle(`random-color`);
 };
 // click event in button for calculate again
 calculateAgain.addEventListener(`click`, calculatecAgainButtonClick);
